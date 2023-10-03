@@ -82,8 +82,8 @@ WSGI_APPLICATION = "mytraveldiarydummy.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": 'railway',
-        "URL": 'postgresql://postgres:jgKmF9kqmg8hjAKHKIJh@containers-us-west-101.railway.app:5664/railway',
+        "NAME": os.environ['PGDATABASE'],
+        "URL": os.environ['DATABASE_URL'],
         'USER': 'postgres',
         'PASSWORD': 'jgKmF9kqmg8hjAKHKIJh',
         'HOST': 'containers-us-west-101.railway.app',
