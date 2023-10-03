@@ -75,8 +75,13 @@ WSGI_APPLICATION = "mytraveldiarydummy.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": 'railway',
+        "URL":'postgresql://postgres:jgKmF9kqmg8hjAKHKIJh@containers-us-west-101.railway.app:5664/railway',
+        'USER': 'postgres',
+        'PASSWORD': 'jgKmF9kqmg8hjAKHKIJh',
+        'HOST': 'containers-us-west-101.railway.app',
+        'PORT': '5664',        
     }
 }
 
