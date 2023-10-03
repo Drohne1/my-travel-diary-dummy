@@ -135,6 +135,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 CSRF_TRUSTED_ORIGINS = [
     'my-travel-diary.de',
     'www.my-travel-diary.de',
+    'https://www.my-travel-diary.de'
 ]
 
 
