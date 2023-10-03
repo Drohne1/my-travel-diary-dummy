@@ -127,7 +127,8 @@ STATIC_URL = "static/"
 
 # added by Lutz
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 CSRF_TRUSTED_ORIGINS = [
     'https://my-travel-diary.de'
