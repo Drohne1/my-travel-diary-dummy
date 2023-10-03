@@ -7,6 +7,7 @@ name = "pypi"
 django = "*"
 postgres = "*"
 psycopg2-binary = "*"
+gunicorn = "*"
 
 [dev-packages]
 
